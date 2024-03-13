@@ -86,14 +86,14 @@
 
 	 <distributionManagement>
     <repository>
-      <id>maven-releases</id>
-      <name>maven-releases</name>
-      <url>http://3.108.190.243:8081/repository/maven-releases/</url>
+      <id>danish-maven</id>
+      <name>danish-maven</name>
+      <url>http://3.108.190.243:8081/repository/danish-maven/</url>
     </repository>
     <snapshotRepository>
-      <id>maven-snapshots</id>
-      <name>maven-snapshots</name>
-      <url>http://3.108.190.243:8081/repository/maven-snapshots/</url>
+      <id>danish-maven</id>
+      <name>danish-maven</name>
+      <url>http://3.108.190.243:8081/repository/danish-maven/</url>
     </snapshotRepository>
 </distributionManagement>
 
