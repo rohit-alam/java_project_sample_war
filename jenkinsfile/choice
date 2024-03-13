@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Clone') {
+            steps {
+                 git branch: "main", url: "https://github.com/danish2109f/my-app.git"
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+        
+        stage('Deploy to Apache Tomcat') {
+            steps {
+                script {
+                 sh "cp target/app.war /home/ubuntu/apache-tomcat-9.0.86/webapps"
+                }
+            }
+        }
+    }
+}
